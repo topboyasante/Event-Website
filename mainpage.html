@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Website</title>
+    <link rel="stylesheet" href="/mainpage.css">
+    <script src="https://kit.fontawesome.com/799a51071e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Audio-->
+    <audio src="/Audio/Asake - Sungba.mp3" loop="loop" autoplay="autoplay" id="my_audio"></audio>
+    <!--Header-->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>urban<span>Weekends</span></h1>
+            </div>
+            <div class="register">
+                <a href="#" class="btn">REGISTER</a>
+            </div>
+        </nav>
+        <!--Hero Section-->
+        <section class="hero">
+            <h1>The Wildest Parties In Town.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, excepturi.</p>
+            <br>
+            <a href="/partylist.html" class="btn">WHAT DEY HAPPEN?</a>
+        </section>
+    </header>
+    <section class="about">
+        <div class="row">
+            <div class="img-section">
+                <img src="/Images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg" alt="music">
+            </div>
+            <div class="text-section">
+                <h1>Epic Music.</h1>
+                <p>Listen and dance to mad tracks from the best DJs across the country</p>
+                <br>
+                <a class="btn" onclick="setOpacityDjs()">SEE DJs</a>
+                <br><br>
+                <div class="djs" id="djs">
+                    <ul>
+                        <li>The iPhone DJ</li>
+                        <li>DJ Wobeti</li>
+                        <li>DJ Black</li>
+                        <li>Violence The DJ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row inverse">
+            <div class="img-section">
+                <img src="/Images/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg" alt="music">
+            </div>
+            <div class="text-section">
+                <h1>Biggest Raves in the Country.</h1>
+                <p>Top Musicians Come every week to make it worth your while.</p>
+                <br>
+                <a class="btn" onclick="setOpacity()">WHO'S PERFORMING?</a>
+                <br>
+                <br>
+                <div class="artistes" id="artistes">
+                    <ul>
+                        <li>Burna Boy</li>
+                        <li>Wizkid</li>
+                        <li>Black Sherif</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-section">
+                <img src="/Images/john-arano-_qADvinJi20-unsplash.jpg" alt="music" style="height:550px ;">
+            </div>
+            <div class="text-section">
+                <h1>Meet and Make New Friends.</h1>
+                <p>Who said It takes one to tango?</p>
+                <br>
+                <a href="/partylist.html" class="btn">SEE AVAILABLE EVENTS</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3>Reach Us on our Social Media Handles:</h3>
+        <br>
+        <div class="section1">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <br>
+        <div class="section2">
+            <p>Made with <i class="fa-solid fa-skull"></i> by Nana Kwasi Asante</p> 
+        </div>
+    </footer>
+    <script src="/mainpage.js"></script>
+</body>
+</html>

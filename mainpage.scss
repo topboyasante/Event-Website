@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: black;
+}
+header{
+    background-image:linear-gradient(rgba(rgb(61, 60, 60),0.8),rgba(gray,0.1)),url(/Images/danny-howe-bn-D2bCvpik-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1em;
+        .logo{
+            span{
+                color: white;
+            }
+        }
+    }
+    .hero{
+      width: 100%;
+      position: absolute;
+      //To Center element
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      color: white;
+      h1{
+        font-size: 5em;
+      }
+      p, a{
+        font-size: 2em;
+      }
+    }
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  margin: 2em auto;
+  width: 80%;
+  color: white;
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 2em auto;
+    .img-section{
+      width: 45%;
+      img{
+        width: 100%;
+      }
+    }
+    .text-section{
+      h1{
+        font-size: 3em;
+      }
+      .artistes, .djs{
+        transition: 0.5s;
+        opacity: 0;
+      }
+      .show{
+        opacity: 1;
+      }
+    }
+  }
+  .inverse{
+    flex-direction: row-reverse;
+  }
+}
+footer{
+  background-color: white;
+  padding: 1em;
+  text-align: center;
+  .section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    i{
+      font-size: 2em;
+    }
+  }
+}
+
+//Media Queries
+@media (max-width:700px) {
+  header{
+    nav{
+      .logo{
+        font-size: 0.5em;
+      }
+    }
+    .hero{
+      h1{
+        font-size: 2em;
+      }
+      p,a{
+        font-size: 1em;
+      }
+    }
+  }
+  .about{
+    .row{
+      flex-direction: column;
+      .img-section{
+        width: 90%;
+      }
+      .text-section{
+        h1{
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+//Reusable Components
+.btn{
+    border: 1px solid white;
+    padding: 0.5em;
+    color: white;
+    cursor: pointer;
+}

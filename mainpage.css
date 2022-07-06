@@ -102,6 +102,9 @@ footer .section1 i {
   header .hero p, header .hero a {
     font-size: 1em;
   }
+  header .hero p {
+    padding: 0.5em;
+  }
 
   .about .row {
     flex-direction: column;
